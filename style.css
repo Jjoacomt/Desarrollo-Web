@@ -22,7 +22,7 @@ nav{
 }
 
 nav ul{ 
-   display: flex;
+    display: flex;
     list-style-type: none;
     justify-content: center;
     flex-grow: 1;
@@ -62,10 +62,16 @@ nav img{
 }
 
 .carrusel{
-    width: 100%;
+    width: 100px;
     height: 100px;
     display: block;
 
+}
+
+.Par{
+    text-align: center;
+    border-radius: 0;
+    color: #333;
 }
 
 .cardContainer{
@@ -91,6 +97,7 @@ nav img{
     
 }
 
+
 .card:hover {
     transform: scale(1.05);
 }
@@ -98,11 +105,12 @@ nav img{
 .cardImage {
     width: 100%;
     height: auto;
-    border-radius: 10%;
+    border-radius: 5px;
 }
 
 .cardContent {
     padding: 16px;
+    border-radius: 10%;
     background-color: #333;
 }
 
@@ -113,7 +121,7 @@ nav img{
 }
 
 .cardDescription {
-    color: #666;
+    color: #ffffff;
     margin: 8px 0;
 }
 
@@ -125,6 +133,7 @@ nav img{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 1s;
+    text-decoration: none;
     
 }
 
@@ -132,4 +141,51 @@ nav img{
     background-color: grey;
 }
 
+/* Suplements */
+.Suplements{
+    height:300px ;
+    width: 250px;
+}
 
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav img {
+        width: 80px;
+        margin: 0;
+    }
+
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .cardContent {
+        padding: 10px;
+    }
+
+    .cardTitle {
+        font-size: 1.2em;
+    }
+
+    .Suplements {
+        height: 200px;
+        width: 100%;
+    }
+}
