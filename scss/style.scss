@@ -23,7 +23,7 @@ header{
     margin: 0 20px;
 }
 
-/* Oculta el checkbox y define el icono de hamburguesa */
+/* Ocultar el checkbox y define el icono de hamburguesa */
 .menu-toggle {
     display: none; /* Oculta el checkbox */
 }
@@ -106,7 +106,7 @@ nav img{
 .card {
     margin: 10px;
     flex: 0 0 auto;
-    max-width: 300px;
+    max-width: 1300px;
     border: 1px solid #ccc;
     border-radius: 8px;
     width: 300px;
@@ -115,6 +115,7 @@ nav img{
     transition: transform 1s;
     background-color: #333;
     text-align: center;
+    display: block;
     
 }
 
